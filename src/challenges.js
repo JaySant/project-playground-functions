@@ -25,9 +25,11 @@ function concatName(frase) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, tie) {
+  return (wins * 3) + (tie * 1);  
 }
+
+
 
 // Desafio 6
 function highestCount() {
