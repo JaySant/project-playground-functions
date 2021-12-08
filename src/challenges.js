@@ -32,8 +32,16 @@ function footballPoints(wins, tie) {
 
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(number) {
+  let maiorNumero = Math.max(...number)
+  let count = 0 
+    for (numbers of number){
+      if(maiorNumero === numbers){
+      count += 1 
+      }
+      
+    }
+    return count;
 }
 
 // Desafio 7
@@ -65,4 +73,5 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
+
 };
