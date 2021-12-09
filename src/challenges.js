@@ -45,10 +45,24 @@ function highestCount(number) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1 , cat2) {
+  let comparaCat1 = Math.abs(mouse - cat1) 
+  let comparaCat2 = Math.abs( mouse - cat2) 
+
+  console.log(comparaCat1,comparaCat2)
+  
+  if(comparaCat1 < comparaCat2 ){
+    return 'cat1';
+  }
+  else if(comparaCat2 < comparaCat1){
+    return 'cat2';
+  }else if(comparaCat1 === comparaCat2){
+    return "os gatos trombam e o rato foge";
+  }
+    
 }
 
+catAndMouse(1, 0, 2)
 // Desafio 8
 function fizzBuzz(numeros) {
   let novaArr = [];
@@ -131,7 +145,7 @@ function decode(frase2) {
 
 }
 
-decode('H2ll4 th2r2!')
+
   
 
 module.exports = {
