@@ -72,12 +72,67 @@ for ( confereNumeros of numeros ){
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let stringPronta = '';
+
+  for (letras of frase){
+    if(letras === 'a'){
+       stringPronta += 1;
+    }else if(letras === 'e'){
+       stringPronta += 2;
+    
+    }else if(letras === 'i'){
+       stringPronta += 3;
+    
+    }else if(letras === 'o'){
+       stringPronta += 4;
+    
+    }else if(letras === 'u'){
+       stringPronta += 5;
+    }
+    else {
+      stringPronta += letras;
+    }
+  }
+  console.log(stringPronta)    
+  return stringPronta;
+
 }
-function decode() {
-  // seu código aqui
+
+// encode('hello there!')
+
+
+
+function decode(frase2) {
+  let stringPronta2 = '';
+
+  for (letras2 of frase2){
+    if(letras2 === '1'){
+       stringPronta2 += 'a';
+
+    }else if(letras2 === '2'){
+       stringPronta2 += 'e';
+    
+    }else if(letras2 === '3'){
+       stringPronta2 += 'i';
+    
+    }else if(letras2 === '4'){
+       stringPronta2 += 'o';
+    
+    }else if(letras2 === '5'){
+       stringPronta2 += 'u';
+    }
+    else {
+      stringPronta2 += letras2;
+    }
+  }
+  console.log(stringPronta2)    
+  return stringPronta2;
+
 }
+
+decode('H2ll4 th2r2!')
+  
 
 module.exports = {
   calcArea,
