@@ -50,8 +50,25 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numeros) {
+  let novaArr = [];
+
+for ( confereNumeros of numeros ){
+    if ( confereNumeros % 3 === 0 && confereNumeros % 5 === 0 ){
+          novaArr.push("fizzBuzz")
+    }
+    if( confereNumeros % 3 !== 0 && confereNumeros % 5 !== 0 ){
+          novaArr.push("bug!")
+    }    
+    if( confereNumeros % 3 == 0 && confereNumeros % 5 !== 0){
+          novaArr.push("fizz")
+    }
+    if( confereNumeros % 5 == 0 && confereNumeros % 3 !== 0){
+          novaArr.push("buzz")
+    }
+    
+  }   
+  return novaArr;
 }
 
 // Desafio 9
